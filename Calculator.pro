@@ -18,7 +18,8 @@ HEADERS += \
     TDD.h \
     calculatorfactory.h \
     mainwindow.h \
-    standartcaclulatorfactory.h
+    standartcaclulatorfactory.h \
+    structs.h
 
 FORMS += \
     mainwindow.ui
@@ -27,3 +28,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    appstyle.qrc
