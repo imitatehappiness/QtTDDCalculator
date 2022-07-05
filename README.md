@@ -1,3 +1,3 @@
 ### Simple calculator for TDD - test-driven development
 
-![image](https://user-images.githubusercontent.com/79199956/177336249-a65e0db4-521d-45f1-b16a-d5bb180b6ea9.png)
+![image](https://user-images.githubusercontent.com/79199956/177338966-a26c2034-66f7-4784-b9b6-1705475d8c14.png)
