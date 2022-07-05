@@ -21,8 +21,8 @@ public:
     virtual QString oneDevide(QString) const = 0;
     virtual QString clear(QString) const = 0;
     virtual QString clearAll() const = 0;
-    virtual QString pow2(QString) const = 0;
-    virtual QString sqrt2(QString) const = 0;
+    virtual QString powY(QString, QString) const = 0;
+    virtual QString sqrtY(QString) const = 0;
 };
 
 #endif // CALCULATORFACTORY_H

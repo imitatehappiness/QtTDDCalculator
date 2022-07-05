@@ -50,10 +50,10 @@ QString StandartCaclulatorFactory::clearAll() const{
     return "";
 }
 
-QString StandartCaclulatorFactory::pow2(QString num) const{
-    return QString::number(num.toDouble() * num.toDouble(), 'g', 15 );
+QString StandartCaclulatorFactory::powY(QString num, QString deg) const{
+    return QString::number(pow(num.toDouble(), deg.toDouble()), 'g', 15 );
 }
 
-QString StandartCaclulatorFactory::sqrt2(QString num) const{
+QString StandartCaclulatorFactory::sqrtY(QString num) const{
     return QString::number(sqrt(num.toDouble()), 'g', 15 );
 }

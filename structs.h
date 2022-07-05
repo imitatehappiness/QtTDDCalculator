@@ -35,8 +35,8 @@ namespace idButton{
     const int clearAll        = 1;
     const int clear           = 2;
     const int oneDevide       = 4;
-    const int pow2            = 5;
-    const int sqrt2           = 6;
+    const int powY            = 5;
+    const int sqrtY           = 6;
     const int division        = 7;
     const int multiplication  = 11;
     const int subtraction     = 15;

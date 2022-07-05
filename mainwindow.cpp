@@ -24,7 +24,7 @@ void MainWindow::setInterface(){
                                                    { "0", idButton::zero  }};
 
     QVector<QPair<QString, int>> captionOperation = {{ "CE",       idButton::clearAll       }, { "<",       idButton::clear       }, { "1/x", idButton::oneDevide   },
-                                                     { "pow(x,2)", idButton::pow2           }, { "sqrt(x)", idButton::sqrt2       }, { "/",   idButton::division    },
+                                                     { "pow(x,y)", idButton::powY           }, { "sqrt(x)", idButton::sqrtY       }, { "/",   idButton::division    },
                                                      { "x",        idButton::multiplication }, { "-",       idButton::subtraction }, { "+",   idButton::addition    },
                                                      { "+/-",      idButton::reverseSign    }, { ".",       idButton::point       }, { "=",   idButton::getAnswer   }};
 
@@ -92,8 +92,8 @@ void MainWindow::calculation(){
         case idButton::clearAll:        lineEditScreen->setText(calculator->clearAll()); break;
         case idButton::clear:           lineEditScreen->setText(calculator->clear(lineEditScreen->text())); break;
         case idButton::oneDevide:       lineEditScreen->setText(calculator->oneDevide(lineEditScreen->text())); break;
-        case idButton::pow2:            lineEditScreen->setText(calculator->pow2(lineEditScreen->text())); break;
-        case idButton::sqrt2:           lineEditScreen->setText(calculator->sqrt2(lineEditScreen->text())); break;
+        case idButton::powY:            value = lineEditScreen->text(); lineEditScreen->setText(""); IdOperation =  idButton::powY; break;
+        case idButton::sqrtY:           lineEditScreen->setText(calculator->sqrtY(lineEditScreen->text())); break;
         case idButton::division:        value = lineEditScreen->text(); lineEditScreen->setText(""); IdOperation =  idButton::division; break;
         case idButton::multiplication:  value = lineEditScreen->text(); lineEditScreen->setText(""); IdOperation =  idButton::multiplication; break;
         case idButton::subtraction:     value = lineEditScreen->text(); lineEditScreen->setText(""); IdOperation =  idButton::subtraction; break;
@@ -106,6 +106,7 @@ void MainWindow::calculation(){
             if(IdOperation == idButton::multiplication) result = calculator->multiplication(value, lineEditScreen->text());
             if(IdOperation == idButton::subtraction)    result = calculator->subtraction(value, lineEditScreen->text());
             if(IdOperation == idButton::addition)       result = calculator->addition(value, lineEditScreen->text());
+            if(IdOperation == idButton::powY)           result = calculator->powY(value, lineEditScreen->text());
             IdOperation = -1;
             lineEditScreen->setText(result);
             break;

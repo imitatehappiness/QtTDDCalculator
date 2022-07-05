@@ -22,8 +22,8 @@ public:
     virtual QString oneDevide(QString num) const;
     virtual QString clear(QString num) const;
     virtual QString clearAll() const;
-    virtual QString pow2(QString num) const;
-    virtual QString sqrt2(QString num) const;
+    virtual QString powY(QString num, QString deg) const;
+    virtual QString sqrtY(QString num) const;
 
 
 };
