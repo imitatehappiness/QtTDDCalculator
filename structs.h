@@ -1,23 +1,5 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
-namespace structs{
-    enum Operations{
-        addition = 0,
-        subtraction,
-        multiplication,
-        division,
-        remainder,
-        pow,
-        sqrt,
-        reverseSign,
-        oneDevide,
-        clear,
-        clearAll,
-        point,
-        getAnswer,
-        isNumber,
-    };
-}
 
 namespace idButton{
 
