@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>Calculator</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="appstyle.qrc">
+    <normaloff>:/calculator.png</normaloff>:/calculator.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_4">
     <item row="1" column="0">
@@ -54,6 +58,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="appstyle.qrc"/>
+ </resources>
  <connections/>
 </ui>
