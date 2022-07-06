@@ -6,6 +6,7 @@
 #include <QLineEdit>
 #include <QSizePolicy>
 #include <QDebug>
+#include <QKeyEvent>
 #include <standartcaclulatorfactory.h>
 #include <calculatorfactory.h>
 #include <structs.h>
