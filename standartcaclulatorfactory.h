@@ -17,14 +17,13 @@ public:
     virtual QString division(QString first, QString second) const;
     virtual QString remainder (QString first, QString second) const;
     virtual QString point(QString num);
-    virtual QString addNum(QString num, QString bntNum);
+    virtual QString addNum(QString num, QString bntNum) const;
     virtual QString reverseSign(QString num)const;
     virtual QString oneDevide(QString num) const;
     virtual QString clear(QString num) const;
     virtual QString clearAll() const;
     virtual QString powY(QString num, QString deg) const;
     virtual QString sqrtY(QString num) const;
-
 
 };
 #endif // STANDARTCACLULATORFACTORY_H

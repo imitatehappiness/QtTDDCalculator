@@ -45,8 +45,6 @@ void MainWindow::setInterface(){
         QPushButton *button = new QPushButton(this);
         button->setText(captionNumbers[btnIndex].first);
         button->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        button->setProperty("isNumber", true);
-        button->setProperty("value", captionNumbers[btnIndex].first);
         button->setProperty("id", captionNumbers[btnIndex].second);
 
         button->setFont(FontObj);

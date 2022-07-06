@@ -27,7 +27,7 @@ QString StandartCaclulatorFactory::point(QString num) {
     return num;
 }
 
-QString StandartCaclulatorFactory::addNum(QString num, QString bntNum) {
+QString StandartCaclulatorFactory::addNum(QString num, QString bntNum) const{
     return (num + bntNum);
 }
 

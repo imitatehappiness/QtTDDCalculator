@@ -7,7 +7,7 @@
 #include <QDebug>
 #include "TDD.h"
 
-#define TEST
+//#define TDD_TEST
 const QString FONT_FAMILY_APP = "Times";
 const uint FONT_SIZE_APP = 9;
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
 
     a.setStyleSheet(styleQSS);
 
-#ifdef TEST
+#ifdef TDD_TEST
     QTest::qExec(new TDDTest, argc, argv);
 #else
     MainWindow w;

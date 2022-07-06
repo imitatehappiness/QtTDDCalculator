@@ -16,7 +16,7 @@ public:
     virtual QString division(QString, QString) const = 0;
     virtual QString remainder (QString, QString) const = 0;
     virtual QString point(QString) = 0;
-    virtual QString addNum(QString, QString) = 0;
+    virtual QString addNum(QString, QString) const = 0;
     virtual QString reverseSign(QString) const = 0;
     virtual QString oneDevide(QString) const = 0;
     virtual QString clear(QString) const = 0;
